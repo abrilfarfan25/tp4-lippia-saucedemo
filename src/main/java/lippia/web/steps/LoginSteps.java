@@ -14,8 +14,10 @@ public class LoginSteps extends PageSteps {
     }
     @When("^el usuario hace click en el boton \"Login\"$")
     public void click() {
+
         LoginService.clickLoginButton();
     }
+
     @Then("^el usuario visualiza el mensaje de error$")
     public void mensajeDeError() {
         LoginService.visualizarMensajeError();
