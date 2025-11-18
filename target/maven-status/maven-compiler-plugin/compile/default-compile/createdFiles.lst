@@ -1,0 +1,8 @@
+lippia\web\services\InventoryService.class
+lippia\web\steps\LoginSteps.class
+lippia\web\constants\InventoryConstants.class
+lippia\web\reporters\TestManagerReporter.class
+lippia\web\services\LoginService.class
+lippia\web\constants\LoginConstants.class
+lippia\web\reporters\CucumberReporter.class
+lippia\web\steps\InventorySteps.class
