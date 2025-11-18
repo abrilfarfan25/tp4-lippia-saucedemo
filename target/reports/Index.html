@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">nov 18, 2025 01:41:37 a. m.</span>
+                    <span class="badge badge-primary">nov 18, 2025 02:09:39 a. m.</span>
                 </a>
             </li>
         </ul>
@@ -117,6 +117,7 @@
 					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" href="#">@Carrito</a>
 						<a class="dropdown-item" href="#">@Agregar_producto_exitosamente</a>
+						<a class="dropdown-item" href="#">@Eliminar_producto_desde_inventory</a>
 					</ul>
 				</li>
 			</ul>
@@ -133,8 +134,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Carrito de compras</p>
-							<p class="duration text-sm">0h 0m 4s+355ms</p>
-							<span class="datetime">01:41:41 a. m.</span>
+							<p class="duration text-sm">0h 0m 10s+18ms</p>
+							<span class="datetime">02:09:43 a. m.</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -142,9 +143,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">Carrito de compras</h5>
-									<span class='badge badge-success'>11.18.2025 01:41:41</span>
-									<span class='badge badge-danger'>11.18.2025 01:41:46</span>
-									<span class='badge badge-default'>0h 0m 4s+355ms</span>
+									<span class='badge badge-success'>11.18.2025 02:09:43</span>
+									<span class='badge badge-danger'>11.18.2025 02:09:53</span>
+									<span class='badge badge-default'>0h 0m 10s+18ms</span>
 								</div>
 								<div class="m-t-15">
 			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Carrito</span>
@@ -198,6 +199,55 @@
 					</div>
 				</div>
 	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Eliminar un producto</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.login(String,String)">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given el usuario ingresa con usuario standard_user y contraseña secret_sauce</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.click()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>And el usuario hace click en el boton "Login"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start given" title="InventorySteps.agregar_product()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Given el usuario agrega el producto "Sauce Labs Backpack" al carrito</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start when" title="InventorySteps.eliminar_product()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>When el usuario hace click en el botón "Remove"</span>
+							</div>
+				<div class="details"></div>
+							<div class="d-flex align-items-center justify-content-start then" title="InventorySteps.producto_eliminado()">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>Then el contador del carrito muestra "0"</span>
+							</div>
+				<div class="details"></div>
+					</div>
+				</div>
+	</div>
 </div>
 					</div>
 				</li>
@@ -231,7 +281,7 @@
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">3</span>
 					</a>
 				</li>
 			</ul>
@@ -242,9 +292,9 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">@Carrito</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="duration text-sm">3 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>1</span>
+							<span class='badge badge-success'>2</span>
 							
 							
 							
@@ -254,7 +304,7 @@
 					<div class="test-contents d-none">
 						<div class="info">
 							<h4>@Carrito</h4>
-							<span status="pass" class='badge badge-success'>1 passed</span>
+							<span status="pass" class='badge badge-success'>2 passed</span>
 							
 							
 							
@@ -274,7 +324,7 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>01:41:41 a. m.</td>
+									<td>02:09:43 a. m.</td>
 									<td class='linked' test-id='1'>
 										Carrito de compras
 									</td>
@@ -285,11 +335,25 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>01:41:41 a. m.</td>
+									<td>02:09:43 a. m.</td>
 									<td class='linked' test-id='2'>
 										Agregar un producto al carrito
 										<div class="">
 											<span class="badge badge-default">Carrito de compras.Agregar un producto al carrito</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>02:09:49 a. m.</td>
+									<td class='linked' test-id='9'>
+										Eliminar un producto
+										<div class="">
+											<span class="badge badge-default">Carrito de compras.Eliminar un producto</span>
 										</div>
 									</td>
 								</tr>
@@ -333,11 +397,59 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>01:41:41 a. m.</td>
+									<td>02:09:43 a. m.</td>
 									<td class='linked' test-id='2'>
 										Agregar un producto al carrito
 										<div class="">
 											<span class="badge badge-default">Carrito de compras.Agregar un producto al carrito</span>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">@Eliminar_producto_desde_inventory</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>1</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>@Eliminar_producto_desde_inventory</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
+							
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>02:09:49 a. m.</td>
+									<td class='linked' test-id='9'>
+										Eliminar un producto
+										<div class="">
+											<span class="badge badge-default">Carrito de compras.Eliminar un producto</span>
 										</div>
 									</td>
 								</tr>
@@ -399,7 +511,7 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+					<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> scenarios failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
@@ -419,7 +531,7 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+					<div><small data-tooltip='100%'><b>9</b> steps passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> steps failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
@@ -455,7 +567,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Scenarios</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
 							<span>100,00%</span>
@@ -474,7 +586,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">nov 18, 2025 01:41:37 a. m.</h4>
+							<h4 class="font-weight-light mt-4">nov 18, 2025 02:09:39 a. m.</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -490,7 +602,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 9s+512ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 15s+234ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -536,16 +648,26 @@
 						<tbody>
 							<tr>
 								<td>@Carrito</td>
+								<td>2</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									66,667%
+								</td>
+							</tr>
+							<tr>
+								<td>@Agregar_producto_exitosamente</td>
 								<td>1</td>
 								<td>0</td>
 								<td>0</td>
 								<td>0</td>
 								<td>
-									50%
+									100%
 								</td>
 							</tr>
 							<tr>
-								<td>@Agregar_producto_exitosamente</td>
+								<td>@Eliminar_producto_desde_inventory</td>
 								<td>1</td>
 								<td>0</td>
 								<td>0</td>
@@ -571,8 +693,8 @@
 		warningParent: 0,
 		skipParent: 0,
 		exceptionsParent: 0,
-		childCount: 1,
-		passChild: 1,
+		childCount: 2,
+		passChild: 2,
 		failChild: 0,
 		fatalChild: 0,
 		errorChild: 0,
@@ -581,8 +703,8 @@
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 0,
-		grandChildCount: 4,
-		passGrandChild: 4,
+		grandChildCount: 9,
+		passGrandChild: 9,
 		failGrandChild: 0,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
@@ -591,8 +713,8 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 4,
-		passEvents: 4,
+		eventsCount: 9,
+		passEvents: 9,
 		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
@@ -605,7 +727,7 @@
 </script>
 <script>
 	var timeline = {
-	        "Carrito de compras":4.355
+	        "Carrito de compras":10.018
 	};
 </script>
                 </div>

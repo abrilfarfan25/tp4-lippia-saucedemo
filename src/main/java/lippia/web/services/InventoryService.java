@@ -22,4 +22,15 @@ public class InventoryService extends ActionManager {
         Assert.assertEquals(getText(InventoryConstants.CART_COUNTER_XPATH), "1",
                 "El contador del carrito no muestra 1");
     }
+
+    public static void eliminarproducto() {
+        waitVisibility(InventoryConstants.BUTTON_REMOVE_XPATH);
+        click(InventoryConstants.BUTTON_REMOVE_XPATH);
+    }
+
+    //Cuando no hay elementos en el carrito el contador no aparece
+    public static void verifyRemovedProduct() {
+        Assert.assertFalse(isPresent(InventoryConstants.CART_COUNTER_XPATH),
+                "El contador del carrito debería NO estar presente");
+    }
 }

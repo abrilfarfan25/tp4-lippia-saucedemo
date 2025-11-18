@@ -20,4 +20,15 @@ public class InventorySteps extends PageSteps {
     public void producto_agregado() {
         InventoryService.verifyAddedProduct();
     }
+
+    @When("^el usuario hace click en el botón \"Remove\"$")
+    public void eliminar_product() {
+        InventoryService.eliminarproducto();
+    }
+
+    @Then("^el contador del carrito muestra \"0\"$")
+    public void producto_eliminado() {
+        InventoryService.verifyRemovedProduct();
+    }
+
 }
