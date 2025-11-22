@@ -29,6 +29,7 @@ public class InventoryService extends ActionManager {
     }
 
     //Cuando no hay elementos en el carrito el contador no aparece
+    //Se muestra el carrito vacío
     public static void verifyRemovedProduct() {
         Assert.assertFalse(isPresent(InventoryConstants.CART_COUNTER_XPATH),
                 "El contador del carrito debería NO estar presente");
