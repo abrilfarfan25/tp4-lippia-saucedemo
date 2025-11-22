@@ -14,5 +14,5 @@ Feature: Carrito de compras
   Scenario: Eliminar un producto
     Given el usuario agrega el producto "Sauce Labs Backpack" al carrito
     When el usuario hace click en el botón "Remove"
-    Then el contador del carrito muestra "0"
+    Then El usuario verifica que no existen productos agregados en el carrito
 

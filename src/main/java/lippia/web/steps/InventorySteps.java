@@ -26,7 +26,7 @@ public class InventorySteps extends PageSteps {
         InventoryService.eliminarproducto();
     }
 
-    @Then("^el contador del carrito muestra \"0\"$")
+    @Then("^El usuario verifica que no existen productos agregados en el carrito$")
     public void producto_eliminado() {
         InventoryService.verifyRemovedProduct();
     }
