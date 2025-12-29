@@ -13,7 +13,7 @@ public class InventoryService extends ActionManager {
         }
 
     public static void agregarproducto() {
-        waitPresence(InventoryConstants.FIRST_PRODUCT_XPATH);
+        waitPresence(InventoryConstants.ADD_BACKPACK_XPATH);
         click(InventoryConstants.BUTTON_ADD_CART_XPATH);
     }
 
@@ -33,5 +33,13 @@ public class InventoryService extends ActionManager {
     public static void verifyRemovedProduct() {
         Assert.assertFalse(isPresent(InventoryConstants.CART_COUNTER_XPATH),
                 "El contador del carrito debería NO estar presente");
+    }
+
+    public static void agregarDosProductos() {
+        waitPresence(InventoryConstants.ADD_BACKPACK_XPATH);
+        click(InventoryConstants.ADD_BACKPACK_XPATH);
+
+        waitPresence(InventoryConstants.ADD_BIKE_LIGHT_XPATH);
+        click(InventoryConstants.ADD_BIKE_LIGHT_XPATH);
     }
 }
