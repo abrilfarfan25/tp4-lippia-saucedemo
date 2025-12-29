@@ -7,6 +7,7 @@ import static com.crowdar.core.actions.WebActionManager.navigateTo;
 
 public class LoginService extends ActionManager {
     public static void navegarWeb() {
+
         navigateTo(PropertyManager.getProperty("web.base.url"));
     }
 
@@ -19,9 +20,15 @@ public class LoginService extends ActionManager {
         click(LoginConstants.BUTTON_LOGIN_XPATH);
     }
 
-    public static void visualizarMensajeError() {
+    public static void visualizarMensajeError(String mensajeEsperado) {
         waitPresence(LoginConstants.TEXT_MESSAGE_XPATH);
-        Assert.assertEquals(getText(LoginConstants.TEXT_MESSAGE_XPATH), "Epic sadface: Sorry, this user has been locked out.", "No se encontro el elemento");
+        String mensajeActual = getText(LoginConstants.TEXT_MESSAGE_XPATH);
+        Assert.assertEquals(
+                mensajeActual,
+                mensajeEsperado,
+                "El mensaje de error no coincide"
+        );
     }
+
 
 }

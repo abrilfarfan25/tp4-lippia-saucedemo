@@ -1,45 +1,30 @@
 {
-
   "browserName": "chrome",
 
   "goog:chromeOptions": {
-
     "args": [
-
-      "disable-infobars",
-
+      "--incognito",
+      "--disable-infobars",
       "--no-sandbox",
-
       "--disable-dev-shm-usage",
-
       "--test-type",
-
       "--ignore-certificate-errors",
-
       "--start-maximized",
-
-      "--disable-blink-features=AutomationControlled"
-
+      "--disable-blink-features=AutomationControlled",
+      "--disable-notifications",
+      "--disable-save-password-bubble",
+      "--disable-features=PasswordLeakDetection",
+      "--disable-features=AutofillServerCommunication"
     ],
-
     "extensions": [],
-
     "prefs": {
-
       "printing.enabled": false,
-
       "credentials_enable_service": false,
-
       "profile.password_manager_enabled": false,
-
       "profile.password_manager_leak_detection_enabled": false
-
     }
-
   },
 
   "platform": "ANY",
-
   "recordVideo": "false"
-
 }

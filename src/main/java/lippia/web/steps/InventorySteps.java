@@ -1,5 +1,7 @@
 package lippia.web.steps;
 import com.crowdar.core.PageSteps;
+import cucumber.api.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lippia.web.services.InventoryService;
@@ -30,5 +32,8 @@ public class InventorySteps extends PageSteps {
     public void producto_eliminado() {
         InventoryService.verifyRemovedProduct();
     }
-
+    @And("el usuario agrega dos productos al carrito")
+    public void agregaDosProductosAlCarrito() {
+        InventoryService.agregarDosProductos();
+    }
 }

@@ -12,15 +12,17 @@ public class LoginSteps extends PageSteps {
         LoginService.navegarWeb();
         LoginService.completarUserandPassParams(user,pass);
     }
+
     @When("^el usuario hace click en el boton \"Login\"$")
     public void click() {
 
         LoginService.clickLoginButton();
     }
 
-    @Then("^el usuario visualiza el mensaje de error$")
-    public void mensajeDeError() {
-        LoginService.visualizarMensajeError();
+    @Then("^el usuario visualiza el mensaje de error \"(.*)\"$")
+    public void mensajeDeError(String mensajeEsperado) {
+        LoginService.visualizarMensajeError(mensajeEsperado);
     }
+
 
 }

@@ -1,52 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-22T00:53:42Z" name="BDD Test Suite" finished-at="2025-11-22T00:54:02Z" duration-ms="20566">
+  <suite started-at="2025-12-29T02:41:03Z" name="BDD Test Suite" finished-at="2025-12-29T02:41:31Z" duration-ms="27317">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@3daa422a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@78861d9e]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-22T00:53:42Z" name="TestNg Secuencial runner Tests" finished-at="2025-11-22T00:54:02Z" duration-ms="20566">
+    <test started-at="2025-12-29T02:41:03Z" name="TestNg Secuencial runner Tests" finished-at="2025-12-29T02:41:31Z" duration-ms="27317">
       <class name="com.crowdar.bdd.cukes.TestNGSecuencialRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@3daa422a]" started-at="2025-11-22T00:53:42Z" name="setUpClass" finished-at="2025-11-22T00:53:42Z" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@78861d9e]" started-at="2025-12-29T02:41:03Z" name="setUpClass" finished-at="2025-12-29T02:41:04Z" duration-ms="512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@3daa422a]" started-at="2025-11-22T00:53:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-22T00:53:57Z" duration-ms="14521" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@78861d9e]" started-at="2025-12-29T02:41:04Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-12-29T02:41:28Z" duration-ms="24501" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Agregar un producto al carrito"]]>
+                <![CDATA["Compra completa y validación de datos"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Carrito de compras"]]>
+                <![CDATA["Compra de productos completa"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@3daa422a]" started-at="2025-11-22T00:53:57Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-22T00:54:02Z" duration-ms="5235" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Eliminar un producto"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Carrito de compras"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@3daa422a]" started-at="2025-11-22T00:54:02Z" name="tearDownClass" finished-at="2025-11-22T00:54:02Z" duration-ms="418" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.crowdar.bdd.cukes.TestNGSecuencialRunner@78861d9e]" started-at="2025-12-29T02:41:28Z" name="tearDownClass" finished-at="2025-12-29T02:41:31Z" duration-ms="2211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

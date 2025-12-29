@@ -1,7 +1,10 @@
 lippia\web\services\InventoryService.class
 lippia\web\steps\LoginSteps.class
 lippia\web\constants\InventoryConstants.class
+lippia\web\constants\CheckoutConstants.class
+lippia\web\steps\CheckoutSteps.class
 lippia\web\reporters\TestManagerReporter.class
+lippia\web\services\CheckoutService.class
 lippia\web\services\LoginService.class
 lippia\web\constants\LoginConstants.class
 lippia\web\reporters\CucumberReporter.class
