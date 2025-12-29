@@ -48,7 +48,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">dic 28, 2025 11:41:03 p.ÿm.</span>
+                    <span class="badge badge-primary">dic 29, 2025 02:24:04 p.ÿm.</span>
                 </a>
             </li>
         </ul>
@@ -115,8 +115,8 @@
 					<i class="fa fa-tag"></i>
 					</a>
 					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a class="dropdown-item" href="#">@Checkout</a>
-						<a class="dropdown-item" href="#">@Compra_completa</a>
+						<a class="dropdown-item" href="#">@Login</a>
+						<a class="dropdown-item" href="#">@Regresion_LoginFallido</a>
 					</ul>
 				</li>
 			</ul>
@@ -125,29 +125,29 @@
 			<ul class="test-list-item">
 				<li class="test-item"  status="pass" test-id="1"
 					author=""
-					tag="@Checkout"
+					tag="@Login"
 					device="">
 					<div class="status-avatar pass-bg">
 						<i class="fa fa-check text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">Compra de productos completa</p>
-							<p class="duration text-sm">0h 0m 18s+17ms</p>
-							<span class="datetime">23:41:10 p.ÿm.</span>
+							<p class="name">Login soucedemo</p>
+							<p class="duration text-sm">0h 0m 13s+231ms</p>
+							<span class="datetime">14:24:12 p.ÿm.</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">Compra de productos completa</h5>
-									<span class='badge badge-success'>12.28.2025 23:41:10</span>
-									<span class='badge badge-danger'>12.28.2025 23:41:28</span>
-									<span class='badge badge-default'>0h 0m 18s+17ms</span>
+									<h5 class="test-status text-pass">Login soucedemo</h5>
+									<span class='badge badge-success'>12.29.2025 14:24:12</span>
+									<span class='badge badge-danger'>12.29.2025 14:24:25</span>
+									<span class='badge badge-default'>0h 0m 13s+231ms</span>
 								</div>
 								<div class="m-t-15">
-			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Checkout</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Login</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -159,71 +159,79 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">Compra completa y validaci¢n de datos</div>
+				<div class="node">Login fallido con diferentes usuarios</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
 			</div>
 		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.login(String,String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given el usuario ingresa con usuario standard_user y contrase¤a secret_sauce</span>
+				<div class="collapse scenario_outline">
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Login fallido con diferentes usuarios</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+								</div>
 							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.login(String,String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Given el usuario ingresa con usuario locked_out_user y contrase¤a secret_sauce</span>
+									</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="LoginSteps.click()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And el usuario hace click en el boton "Login"</span>
+									<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.click()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When el usuario hace click en el boton "Login"</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.mensajeDeError(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then el usuario visualiza el mensaje de error "Epic sadface: Sorry, this user has been locked out."</span>
+									</div>
+				<div class="details"></div>
 							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="InventorySteps.agregaDosProductosAlCarrito()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And el usuario agrega dos productos al carrito</span>
+						</div>
+						<div class="card-body l1">
+							<div class="card-header" role="tab">
+								<div class="card-title outline-child">
+									<div class="node">Login fallido con diferentes usuarios</div>
+									<div class="status-avatar float-left pass-bg">
+										<i class="fa fa-check text-white"></i>
+									</div>
+								</div>
 							</div>
+							<div class="card-body collapse mt-3">
+									<div class="d-flex align-items-center justify-content-start given" title="LoginSteps.login(String,String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Given el usuario ingresa con usuario abrilfarfan y contrase¤a secret_sauce</span>
+									</div>
 				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="CheckoutSteps.iniciarElCheckout()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>When el usuario inicia el checkout</span>
+									<div class="d-flex align-items-center justify-content-start when" title="LoginSteps.click()">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>When el usuario hace click en el boton "Login"</span>
+									</div>
+				<div class="details"></div>
+									<div class="d-flex align-items-center justify-content-start then" title="LoginSteps.mensajeDeError(String)">
+										<span class="alert-icon pass-bg">
+											<i class="fa fa-check text-white"></i>
+										</span>
+										<span>Then el usuario visualiza el mensaje de error "Epic sadface: Username and password do not match any user in this service"</span>
+									</div>
+				<div class="details"></div>
 							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="CheckoutSteps.completarLosDatosPersonales(String,String,String)">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And el usuario completa los datos personales nombre Abril apellido Farfan codigo 4139</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start then" title="CheckoutSteps.visualizaElResumenDeLaCompra()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Then el usuario visualiza el resumen de la compra</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="CheckoutSteps.validarResumenCompra()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And el resumen de compra es el correcto</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start and" title="CheckoutSteps.visualizarMensajeDeCompraExitosa()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>And el usuario visualiza el mensaje de compra exitosa</span>
-							</div>
-				<div class="details"></div>
-					</div>
+						</div>
 				</div>
 	</div>
 </div>
@@ -269,10 +277,10 @@
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">@Checkout</p>
-							<p class="duration text-sm">2 tests</p>
+							<p class="name">@Login</p>
+							<p class="duration text-sm">3 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>1</span>
+							<span class='badge badge-success'>2</span>
 							
 							
 							
@@ -281,8 +289,8 @@
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>@Checkout</h4>
-							<span status="pass" class='badge badge-success'>1 passed</span>
+							<h4>@Login</h4>
+							<span status="pass" class='badge badge-success'>2 passed</span>
 							
 							
 							
@@ -302,9 +310,9 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>23:41:10 p.ÿm.</td>
+									<td>14:24:12 p.ÿm.</td>
 									<td class='linked' test-id='1'>
-										Compra de productos completa
+										Login soucedemo
 									</td>
 								</tr>
 								<tr class="tag-test-status" status="pass">
@@ -313,11 +321,25 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>23:41:10 p.ÿm.</td>
-									<td class='linked' test-id='2'>
-										Compra completa y validaci¢n de datos
+									<td>14:24:12 p.ÿm.</td>
+									<td class='linked' test-id='3'>
+										Login fallido con diferentes usuarios
 										<div class="">
-											<span class="badge badge-default">Compra de productos completa.Compra completa y validaci¢n de datos</span>
+											<span class="badge badge-default">Login soucedemo.Login fallido con diferentes usuarios</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>14:24:21 p.ÿm.</td>
+									<td class='linked' test-id='9'>
+										Login fallido con diferentes usuarios
+										<div class="">
+											<span class="badge badge-default">Login soucedemo.Login fallido con diferentes usuarios</span>
 										</div>
 									</td>
 								</tr>
@@ -328,10 +350,10 @@
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">@Compra_completa</p>
-							<p class="duration text-sm">1 tests</p>
+							<p class="name">@Regresion_LoginFallido</p>
+							<p class="duration text-sm">3 tests</p>
 							<span class="datetime">
-							<span class='badge badge-success'>1</span>
+							<span class='badge badge-success'>3</span>
 							
 							
 							
@@ -340,8 +362,8 @@
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>@Compra_completa</h4>
-							<span status="pass" class='badge badge-success'>1 passed</span>
+							<h4>@Regresion_LoginFallido</h4>
+							<span status="pass" class='badge badge-success'>3 passed</span>
 							
 							
 							
@@ -361,11 +383,39 @@
 											<i class="fa fa-check text-white"></i>
 										</div>
 									</td>
-									<td>23:41:10 p.ÿm.</td>
+									<td>14:24:12 p.ÿm.</td>
 									<td class='linked' test-id='2'>
-										Compra completa y validaci¢n de datos
+										Login fallido con diferentes usuarios
 										<div class="">
-											<span class="badge badge-default">Compra de productos completa.Compra completa y validaci¢n de datos</span>
+											<span class="badge badge-default">Login soucedemo.Login fallido con diferentes usuarios</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>14:24:12 p.ÿm.</td>
+									<td class='linked' test-id='3'>
+										Login fallido con diferentes usuarios
+										<div class="">
+											<span class="badge badge-default">Login soucedemo.Login fallido con diferentes usuarios</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>14:24:21 p.ÿm.</td>
+									<td class='linked' test-id='9'>
+										Login fallido con diferentes usuarios
+										<div class="">
+											<span class="badge badge-default">Login soucedemo.Login fallido con diferentes usuarios</span>
 										</div>
 									</td>
 								</tr>
@@ -427,7 +477,7 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+					<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> scenarios failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
@@ -447,7 +497,7 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+					<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
 					<div>
 						<small data-tooltip='0%'><b>0</b> steps failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
@@ -483,7 +533,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Scenarios</h6>
-							<h2 class="font-size-28 font-weight-light mt-3">1</h2>
+							<h2 class="font-size-28 font-weight-light mt-3">2</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
 							<span>100,00%</span>
@@ -502,7 +552,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">dic 28, 2025 11:41:03 p.ÿm.</h4>
+							<h4 class="font-weight-light mt-4">dic 29, 2025 02:24:04 p.ÿm.</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -518,7 +568,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 0m 24s+957ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 22s+419ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -563,18 +613,18 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>@Checkout</td>
-								<td>1</td>
+								<td>@Login</td>
+								<td>2</td>
 								<td>0</td>
 								<td>0</td>
 								<td>0</td>
 								<td>
-									50%
+									66,667%
 								</td>
 							</tr>
 							<tr>
-								<td>@Compra_completa</td>
-								<td>1</td>
+								<td>@Regresion_LoginFallido</td>
+								<td>3</td>
 								<td>0</td>
 								<td>0</td>
 								<td>0</td>
@@ -599,8 +649,8 @@
 		warningParent: 0,
 		skipParent: 0,
 		exceptionsParent: 0,
-		childCount: 1,
-		passChild: 1,
+		childCount: 2,
+		passChild: 2,
 		failChild: 0,
 		fatalChild: 0,
 		errorChild: 0,
@@ -609,8 +659,8 @@
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 0,
-		grandChildCount: 8,
-		passGrandChild: 8,
+		grandChildCount: 6,
+		passGrandChild: 6,
 		failGrandChild: 0,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
@@ -619,8 +669,8 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 8,
-		passEvents: 8,
+		eventsCount: 6,
+		passEvents: 6,
 		failEvents: 0,
 		fatalEvents: 0,
 		errorEvents: 0,
@@ -633,7 +683,7 @@
 </script>
 <script>
 	var timeline = {
-	        "Compra de productos completa":18.017
+	        "Login soucedemo":13.231
 	};
 </script>
                 </div>

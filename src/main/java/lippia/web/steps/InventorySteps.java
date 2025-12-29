@@ -32,6 +32,7 @@ public class InventorySteps extends PageSteps {
     public void producto_eliminado() {
         InventoryService.verifyRemovedProduct();
     }
+
     @And("el usuario agrega dos productos al carrito")
     public void agregaDosProductosAlCarrito() {
         InventoryService.agregarDosProductos();

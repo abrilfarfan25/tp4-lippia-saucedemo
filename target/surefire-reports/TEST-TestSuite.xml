@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="27.977" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="24.385" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\abrii\.cache\selenium\chromedriver\win64\143.0.7499.169\chromedriver.exe"/>
@@ -79,5 +79,6 @@
     <property name="java.class.version" value="65.0"/>
     <property name="TEST_MANAGER_PASSWORD" value=""/>
   </properties>
-  <testcase name="runScenario" classname="com.crowdar.bdd.cukes.TestNGSecuencialRunner" time="24.501"/>
+  <testcase name="runScenario" classname="com.crowdar.bdd.cukes.TestNGSecuencialRunner" time="16.476"/>
+  <testcase name="runScenario" classname="com.crowdar.bdd.cukes.TestNGSecuencialRunner" time="5.386"/>
 </testsuite>
